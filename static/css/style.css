@@ -1,0 +1,63 @@
+.btn_small {
+    height: 24px;
+    width: 60px;
+    line-height: 24px;
+    margin: 5px 5px;
+    padding: 0 0.5em;
+}
+
+.task_header {
+    margin-top: 5px;
+}
+
+.row .col {
+    padding: 0 .0rem;
+}
+
+.modal-trigger img {
+
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.modal-trigger:hover img {
+    -moz-transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.imagewrap {
+    display:inline-block;
+    position:relative;
+    
+}
+    
+.button3 {
+    position:absolute;
+    right:50%;top:50%;
+    
+}
+
+.nav-wrapper {
+    background-color: white;
+}
+
+nav ul a {
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    font-size: 1.5rem;
+    color: rgba(0,0,0,0.87);
+    display: block;
+    padding: 0 15px;
+    cursor: pointer;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.header {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+ html {
+  scroll-behavior: smooth;
+ }

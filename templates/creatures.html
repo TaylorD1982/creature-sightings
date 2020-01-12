@@ -1,0 +1,14 @@
+{% extends 'base.html'%} {% block content %}
+
+<div class="imagewrap">
+    <img src="static/images/hare1.jpg" width="100%">
+
+    <button class="btn waves-effect waves-light button3" type="submit" name="action">Get started
+        <i class="material-icons right">
+            <a href="{{url_for('add_creature')}}"></a>
+        </i>
+    </button>
+
+</div>
+
+{% endblock %}
