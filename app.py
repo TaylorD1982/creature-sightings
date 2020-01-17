@@ -39,7 +39,7 @@ def statistics():
 def insert_creature():
     creatures =  mongo.db.creatures
     creatures.insert_one(request.form.to_dict())
-    return redirect(url_for('get_creatures'))
+    return redirect(url_for('statistics'))
 
 
 @app.route('/edit_creature/<creature_id>')

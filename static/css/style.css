@@ -124,3 +124,17 @@ nav ul a {
     margin-left: 50px;
     margin-right: 50px;
 }
+
+/* Creatures font */ 
+
+.text-creatures {
+  color: #4C9900;
+  font-size: 20px;
+  padding: 5px 5px;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.form {
+    margin-left: 250px;
+    margin-right: 450px;
+}
