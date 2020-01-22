@@ -1,18 +1,18 @@
-{% extends 'base.html'%} {% block content %}
+{% extends 'base.html' %} {% block content %}
 
-<h3>Edit creature</h3>
-<div class="row">
+<h3 class="text">Edit Sighting</h3>
+<div class="row form">
     <form action="{{ url_for('update_creature', creature_id=creature._id) }}" method="POST" class="col s12">
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">poll</i>
-                <select id="location" name="location_name">
+                <select id="location" name="location">
                   <option value="" disabled selected>Choose location</option>
                   {% for loc in locations %}
                       {% if loc.location_name == creature.location_name%}
-                      <option value="{{loc.location_name}}" selected >{{loc.location_name}}</option>
+                      <option value="{{loc.location}}" selected >{{loc.location}}</option>
                       {% else %}
-                       <option value="{{loc.location_name}}">{{loc.location_name}}</option>
+                       <option value="{{loc.location}}">{{loc.location}}</option>
                     {% endif %}
                   {% endfor %}
                 </select>
@@ -21,36 +21,30 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <i class="material-icons prefix">assignment</i>
-                <input id="creature_name" name="creature_name" type="text" class="validate" value="{{creature.creature_name}}">
-                <label for="icon_prefix">creature Name</label>
+                <i class="material-icons prefix">pets</i>
+                <input id="creature" name="creature_name" type="text" class="validate" value="{{creature.creature_name}}">
+                <label for="icon_prefix">creature</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <i class="material-icons prefix">subject</i>
-                <textarea name="creature_description" id="creature_description" class="materialize-textarea">{{creature.creature_description}}</textarea>
-                <label for="icon_telephone">creature Description</label>
+                <i class="material-icons prefix">comment</i>
+                <textarea name="comment" id="comment" class="materialize-textarea">{{creature.comment}}</textarea>
+                <label for="icon_telephone">Comment</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <i class="material-icons prefix">today</i>
-                <input id="due_date" name="due_date" type="text" class="datepicker">
-                <label for="icon_prefix">Due Date</label>
+                <i class="material-icons prefix">date_range</i>
+                <input id="date" name="date" type="text" class="datepicker">
+                <label for="icon_prefix">Due of Sighting</label>
             </div>
         </div>
         <div class="row">
-            <div class="switch">
-                <label>
-                    {% if creature.is_urgent %}
-                          <input id="is_urgent" name="is_urgent" type="checkbox" checked>
-                    {% else %}
-                         <input id="is_urgent" name="is_urgent" type="checkbox">
-                    {% endif%}
-                  <span class="lever"></span>
-                  Is Urgent
-                </label>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">access_time</i>
+                <input id="time" name="time" type="text" class="timepicker">
+                <label for="icon_prefix">Time of Sighting</label>
             </div>
         </div>
         <div class="row">

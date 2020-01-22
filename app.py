@@ -56,12 +56,12 @@ def update_creature(creature_id):
     creatures.update( {'_id': ObjectId(creature_id)},
     {
         'creature_name':request.form.get('creature_name'),
-        'location_name':request.form.get('location_name'),
-        'creature_description': request.form.get('creature_description'),
-        'due_date': request.form.get('due_date'),
-        'is_urgent':request.form.get('is_urgent')
+        'location':request.form.get('location'),
+        'comment': request.form.get('comment'),
+        'date': request.form.get('date'),
+        'time':request.form.get('time')
     })
-    return redirect(url_for('get_creatures'))
+    return redirect(url_for('statistics'))
     
 """   
 
