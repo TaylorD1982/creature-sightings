@@ -63,13 +63,15 @@ def update_creature(creature_id):
     })
     return redirect(url_for('statistics'))
     
-"""   
+  
 
 @app.route('/delete_creature/<creature_id>')
 def delete_creature(creature_id):
     mongo.db.creatures.remove({'_id': ObjectId(creature_id)})
-    return redirect(url_for('get_creatures'))
-    
+    return redirect(url_for('statistics'))
+ 
+""" 
+   
 @app.route('/get_locations')
 def get_locations():
     return render_template('locations.html',

@@ -1,42 +1,31 @@
 {% extends 'base.html' %} {% block content %}
 
-<div class="row-stats">
-    <div class="row">
-        <div class="col s12 m6 l6 container">
-            <a href="#C2">
-                <img src="static/images/chart.jpg" width="100%" class="image">
-                  <div class="middle">
-                    <div class="text">STATISTICS</div>
-                  </div>
-            </a>
-        </div>
-        <div class="col s12 m6 l6 container">
-            <a href="#C1">
-            <img src="static/images/bino.png" width="100%" class="image">
-              <div class="middle">
-                <div class="text">SIGHTINGS</div>
-              </div>
-        </a>
-        </div>
-    </div>
+<h3 class="text">Statistics</h3>
+
+<div class="row graphs">
+    <div class="col s12 m6 l6 container"><iframe style="border: none" width="100%" height="480" src="https://charts.mongodb.com/charts-project-0-gippj/embed/charts?id=cea30655-b538-4246-b43d-0cdd28060c60&tenant=b8edf37c-6dc3-4793-a0fc-910779e7c3e6&theme=light"></iframe></div>
+    <div class="col s12 m6 l6"><iframe style="border: none" width="100%" height="480" src="https://charts.mongodb.com/charts-project-0-gippj/embed/charts?id=cea30655-b538-4246-b43d-0cdd28060c60&tenant=b8edf37c-6dc3-4793-a0fc-910779e7c3e6&theme=light"></iframe></div>
 </div>
 
-<h3 id="C1" class="text">Sightings</h3>
+<h3 class="text">Sightings</h3>
 
-<div class="row">
+<div class="row form-stats">
     <ul class="collapsible" data-collapsible="accordion">
         {% for creature in creatures %}
         <li>
             <div class="collapsible-header">
                 <div class="col s3">
                     <i class="material-icons">expand_more</i>
-                    <text class="text-creatures">View Comments</text>
+                    <text class="modal-text">View Comments</text>
                 </div>
                 <div class=" creature_header col s7">
-                    You spotted a <strong class="text-creatures">{{creature.creature_name}}</strong> on <strong class="text-creatures">{{creature.date}}</strong> at <strong class="text-creatures">{{creature.time}}</strong>
+                    <text class="modal-text">You spotted a</text> <strong class="text-creatures">{{creature.creature_name}}</strong> <text class="modal-text"> on </text><strong class="text-creatures">{{creature.date}}</strong> <text class="modal-text">at </text>
+                    <strong
+                        class="text-creatures">{{creature.time}}</strong>
                 </div>
                 <div class=" creature_header col s2">
-                    <a href="{{url_for('edit_creature', creature_id=creature._id)}}" class="waves-effect waves-light btn btn_small green">Edit</a>
+                    <a href="{{url_for('edit_creature', creature_id=creature._id)}}" class="btn btn_small" style="background-color: #4d9900">Edit</a>
+                    <a href="{{url_for('delete_creature', creature_id=creature._id)}}" class="waves-effect waves-light btn btn_small red">Del</a>
                 </div>
             </div>
             <div class="collapsible-body">
@@ -48,20 +37,6 @@
         {% endfor %}
 
     </ul>
-</div>
-
-<h3 id="C2" class="text">Statistics</h3>
-
-<div class="row">
-
-    <div class="col s12 m6 l6 container">
-        <img src="static/images/bar.png" width="100%">
-    </div>
-
-    <div class="col s12 m6 l6 container">
-        <img src="static/images/line-graph.png" width="100%">
-    </div>
-
 </div>
 
 {% endblock %}
