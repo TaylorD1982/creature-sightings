@@ -62,46 +62,11 @@ def update_creature(creature_id):
         'time':request.form.get('time')
     })
     return redirect(url_for('statistics'))
-    
-  
 
 @app.route('/delete_creature/<creature_id>')
 def delete_creature(creature_id):
     mongo.db.creatures.remove({'_id': ObjectId(creature_id)})
     return redirect(url_for('statistics'))
- 
-""" 
-   
-@app.route('/get_locations')
-def get_locations():
-    return render_template('locations.html',
-                           locations=mongo.db.locations.find())
-                           
-@app.route('/edit_location/<location_id>')
-def edit_location(location_id):
-    return render_template('editlocation.html',
-                           location=mongo.db.locations.find_one(
-                           {'_id': ObjectId(location_id)}))
-
-@app.route('/update_location/<location_id>', methods=['POST'])
-def update_location(location_id):
-    mongo.db.locations.update(
-        {'_id': ObjectId(location_id)},
-        {'location_name': request.form.get('location_name')})
-    return redirect(url_for('get_locations'))
-    
-@app.route('/delete_location/<location_id>')
-def delete_location(location_id):
-    mongo.db.locations.remove({'_id': ObjectId(location_id)})
-    return redirect(url_for('get_locations'))
-    
-@app.route('/insert_location', methods=['POST'])
-def insert_location():
-    location_doc = {'location_name': request.form.get('location_name')}
-    mongo.db.locations.insert_one(location_doc)
-    return redirect(url_for('get_locations'))
-    
-"""
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

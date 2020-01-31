@@ -1,17 +1,45 @@
+
+/*  Page headings */
+
+.page-heading {
+    color: #4d9900;
+    font-size: 50px;
+    margin-left: 80px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    font-family: 'Lilita One', cursive;
+}
+
+/*  text used throughout site */
+
+.text {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*  text used on headers in location page */
+
+.location-header {
+    color: white;
+    font-size: 25px;
+    font-family: 'Lilita One', cursive;
+}
+
+/*  modal headings */
+
+.modal-heading {
+    color: #4d9900;
+    font-size: 30px;
+    font-family: 'Lilita One', cursive;
+}
+
+/*  Edit & Delete buttons on Statistics Page */
+
 .btn_small {
     height: 24px;
     width: 60px;
     line-height: 24px;
     margin: 5px 5px;
     padding: 0 0.5em;
-}
-
-.task_header {
-    margin-top: 5px;
-}
-
-.row .col {
-    padding: 0 .0rem;
 }
 
 /* modals */
@@ -29,12 +57,6 @@
     transform: scale(1.03);
 }
 
-.imagewrap {
-    display: inline-block;
-    position: relative;
-
-}
-
 /* navbar */
 
 .nav-wrapper {
@@ -42,75 +64,19 @@
 }
 
 nav ul a {
-    -webkit-transition: background-color .3s;
-    transition: background-color .3s;
-    font-size: 1.5rem;
-    color: rgba(0, 0, 0, 0.87);
-    display: block;
-    padding: 0 15px;
-    cursor: pointer;
-    font-family: 'Source Sans Pro', sans-serif;;
+    -webkit-transition: background-color .4s;
+    transition: background-color .4s;
+    font-size: 1.75rem;
+    color: #1E221E;
+    font-family: 'Source Sans Pro', sans-serif;
+    ;
 }
 
-/* font on locations page */
-
-.header {
-    color: #4d9900;
-    font-size: 30px;
-    font-family: 'Lilita One', cursive;
+nav a {
+    color: black;
 }
 
-/* scroll behaviour */
-
-html {
-    scroll-behavior: smooth;
-}
-
-/* fade on hover creature immages */
-
-.container {
-    padding-left: 150px;
-    padding-right: 150px;
-}
-
-.image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.container:hover .image {
-    opacity: 0.3;
-}
-
-.container:hover .middle {
-    opacity: 1;
-}
-
-
-
-.text {
-    color: #4d9900;
-    font-size: 50px;
-    margin-left: 80px;
-    margin-top: 80px;
-    font-family: 'Lilita One', cursive;
-
-}
+/* Creatures images */
 
 #wrapper,
 img {
@@ -118,74 +84,40 @@ img {
     height: 100%;
 }
 
-/* Creatures font */
-
-.text-creatures {
-    color: #4d9900;
-    font-size: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
-    padding: 5px 5px;
-}
+/* add a creature submission form */
 
 .form {
     margin-left: 250px;
     margin-right: 450px;
 }
 
+@media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
+  .form {
+  margin-left: 50px;
+  margin-right: 50px;
+  }
+ }
+
 
 /* Creature List */
-
-.creature-types {
-    margin-left: 100px;
-    margin-right: 100px;
-}
 
 .animals {
     margin-left: 150px;
     margin-right: 150px;
 }
 
-.modal {
-    height: 90%;
-    width: 55%;
-    background-color: white;
+@media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
+    .animals {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
-.bird-prey {
-    padding-top: 30px;
-    padding-bottom: 80px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
+/* formatting in locations page */
 
-.row-stats {
-    padding-left: 350px;
-    padding-right: 350px;
-    padding-top: 80px;
-    padding-bottom: 20px;
-
-}
-
-.modal-heading {
-    color: #4d9900;
-    font-size: 30px;
-    font-family: 'Lilita One', cursive;
-
-}
-
-
-.new {
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-.creature-background {
-    background-color: #f0f5f5;
-}
-
-.map-wrapper {
-    margin-left: 400px;
-    margin-right: 400px;
+#map {
+    height: 800px;
+    width: 100%;
 }
 
 .locations-wrapper {
@@ -193,19 +125,27 @@ img {
     margin-right: 300px;
 }
 
-.location-wrapper {
-    margin-top: 60px;
+@media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
+.locations-wrapper {
+    margin-left: 50px;
+    margin-right: 50px;
 }
+}
+
+/* space above each location */
+
+.location-wrapper {
+    margin-top: 30px;
+}
+
+/* margin on statistics page */
 
 .form-stats {
     margin-left: 150px;
     margin-right: 150px;
 }
 
-#map {
-    height: 800px;
-    width: 100%;
-}
+/* formatting of graphs on statistics page */
 
 .graphs {
     margin-left: 50px;
