@@ -20,10 +20,9 @@
 }
 }
 
-
 .page-heading-creatures {
     color: #4d9900;
-    font-size: 50px;
+    font-size: 30px;
     margin-left: 80px;
     margin-top: 40px;
     margin-bottom: 70px;
@@ -32,9 +31,11 @@
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
 .page-heading-creatures {
+    font-size: 50px;
     margin-left: 30px;
-    margin-top: 70px;
+    margin-top: 75px;
     margin-bottom: 70px;
+    font-family: 'Lilita One', cursive;
 }
 }
 
@@ -69,10 +70,31 @@
     font-family: 'Lilita One', cursive;
 }
 
+@media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
+.modal-heading {
+    color: #4d9900;
+    font-size: 100px;
+    font-family: 'Lilita One', cursive;
+    text-align: center;
+}}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
+.modal-where {
+    color: #4d9900;
+    font-size: 65px;
+    font-family: 'Lilita One', cursive;
+}}
+
 .modal-text {
     font-size: 20px;
     font-family: 'Source Sans Pro', sans-serif
 }
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
+.modal-text {
+    font-size: 50px;
+    font-family: 'Source Sans Pro', sans-serif
+}}
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
 .modal-text {
@@ -226,7 +248,7 @@ img {
   display: none;
  }
 
- @media only screen and (min-device-width: 0px) and (max-device-width: 500px) {
+ @media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
   .mobileShow {
    display: inline;
   }
@@ -236,7 +258,7 @@ img {
   display: inline;
  }
 
- @media only screen and (min-device-width: 0px) and (max-device-width: 500px) {
+ @media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
   .mobileHide {
    display: none;
   }
@@ -318,11 +340,11 @@ nav {
 
 .side-nav {
     width: 600px;
-    opacity: 0.9;
+    background-color: #4d9900;
 }
 
 .side-nav li>a {
-    color: rgba(0,0,0,0.87);
+    color: white;
     display: block;
     font-size: 50px;
     font-weight: 500;
@@ -388,4 +410,16 @@ nav {
     box-sizing: content-box;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+}
+
+.btn, .btn-large {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
 }

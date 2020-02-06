@@ -30,17 +30,17 @@
                         <a href="#!" class="modal-close waves-effect waves-light btn-large green">Go Back</a>
                         <a href="{{url_for('delete_creature', creature_id=creature._id)}}" class="waves-effect waves-light btn-large red">Delete</a>
                     </center>
+                </div>
             </div>
-</div>
-<div class="collapsible-body">
-    <span>
-                    <p>{{creature.comment}}</p>
+            <div class="collapsible-body">
+                <span>
+                    <p class="stats-text">{{creature.comment}}</p>
                 </span>
-</div>
-</li>
-{% endfor %}
+            </div>
+        </li>
+        {% endfor %}
 
-</ul>
+    </ul>
 </div>
 
 {% endblock %}
