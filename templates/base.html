@@ -16,11 +16,11 @@
 
 <body>
   <header>
-    <container class="mobileHide">
+    <div class="mobileHide">
       <img href="{{url_for('get_creatures')}}" class="brand-logo" src="static/images/banner-desktop.png" width="100%">
-    </container>
+    </div>
     <div class="mobileShow">
-      <img class="brand-logo" src="static/images/banner-mobile.png" height="100%">
+      <img class="brand-logo" src="static/images/banner-mobile-1.png" height="100%">
     </div>
     <nav>
       <div class="nav-wrapper">
@@ -33,14 +33,16 @@
           <li><a href="{{url_for('location')}}">Locations</a></li>
           <li><a href="{{url_for('statistics')}}">Statistics and Sightings</a></li>
         </ul>
+        <center>
           <ul class="side-nav" id="mobile-demo">
-            <li><img src="static/images/banner-mobile.png"></li>
+            <li><img src="static/images/nav-image.png" class="nav-logo"></li>
             <li><a href="{{url_for('get_creatures')}}">Home</a></li>
             <li><a href="{{url_for('add_creature')}}">Add a Creature</a></li>
             <li><a href="{{url_for('creature')}}">Creatures</a></li>
             <li><a href="{{url_for('location')}}">Locations</a></li>
             <li><a href="{{url_for('statistics')}}">Statistics & Sightings</a></li>
           </ul>
+        </center>
       </div>
     </nav>
     <br>
