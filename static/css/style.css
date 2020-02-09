@@ -332,9 +332,10 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
     font-weight: lighter;
     height: 120px;
     line-height: 120px;
-    background-color: #4d9900;
-    color: white;
+    background-color: white;
+    color: #4d9900;
     border-radius: 50%;
+    box-shadow: 0 0 5px green;
 }}
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
@@ -575,3 +576,10 @@ nav {
      padding-right: 43%;
      margin-top: 0px;
  }}
+ 
+ 
+ @media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
+ .nav-wrapper {
+    padding-left: 40%;
+    padding-right: 40%;
+}}
