@@ -176,6 +176,7 @@ nav a {
 img {
     width: 100%;
     height: 100%;
+    border-radius: 25px;
 }
 
 /* add a creature submission form */
@@ -360,18 +361,19 @@ nav {
 .side-nav {
     width: 600px;
     background-color: white;
+    border-radius: 30px;
 }
 
 .side-nav li>a {
     color: black;
     display: block;
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 50px;
     height: 48px;
     line-height: 48px;
     padding: 0 32px;
-    margin-top: 40px;
-    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 50px;
+    font-family: 'Lilita One', cursive;
+    font-weight: lighter;
 }
 
 .row .col.s7 {
@@ -463,6 +465,7 @@ nav {
     overflow-y: auto;
     border-radius: 2px;
     will-change: top, opacity;
+    border-radius: 25px;
 }}
 
 .modal {
@@ -478,6 +481,7 @@ nav {
     overflow-y: auto;
     border-radius: 2px;
     will-change: top, opacity;
+    border-radius: 25px;
 }
 
 /*-------------------------Location modals-------*/
