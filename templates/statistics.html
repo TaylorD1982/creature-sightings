@@ -24,28 +24,31 @@
                 </div>
             </div>
 
+            <div class="collapsible-body">
+                <span>
+                    <p class="stats-text">{{creature.comment}}</p>
+                </span>
+            </div>
+                
+            
             <div id="openModalwill" class="modalDialog">
                 <div class="modal-content">
                     <center class="modal-heading-delete">Delete This Entry?</center>
                     <div>
                         <div class="col s6" style="height: 100px">
                             <a href="#!" class="modal-close">
-                            <center><img src="static/images/thumbs-down.png" style="width: 100px; max-height: 100px"></center>
-                        </a>
+                                <center><img src="static/images/thumbs-down.png" style="width: 100px; max-height: 100px"></center>
+                            </a>
                         </div>
-                        <div class="col s6" style="height: 100px">
+                <div class="col s6" style="height: 100px">
                             <a href="{{url_for('delete_creature', creature_id=creature._id)}}">
-                            <center><img src="static/images/thumbs-up.png" style="width: 100px; max-height: 100px"></center>
-                        </a>
-                        </div>
+                                <center><img src="static/images/thumbs-up.png" style="width: 100px; max-height: 100px"></center>
+                            </a>
                     </div>
                 </div>
-
-                <div class="collapsible-body">
-                    <span>
-                    <p class="stats-text">{{creature.comment}}</p>
-                </span>
-                </div>
+            </div>  
+                
+                
         </li>
         {% endfor %}
 
