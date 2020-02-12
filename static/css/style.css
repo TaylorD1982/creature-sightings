@@ -20,6 +20,8 @@
 }
 }
 
+/* Location Page Heading */
+
 .location-heading {
     margin-left: 0px;
     color: #4d9900;
@@ -39,6 +41,8 @@
     font-family: 'Lilita One', cursive;
 }
 }
+
+/* Headings of creature types */
 
 .page-heading-creatures {
     color: #4d9900;
@@ -59,29 +63,6 @@
 }
 }
 
-
-/*  text used throughout site */
-
-.text {
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-/*  text used on headers in location page */
-
-.location-header {
-    color: white;
-    font-size: 25px;
-    font-family: 'Lilita One', cursive;
-    padding: 10px;
-}
-
-@media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
-.location-header {
-    color: white;
-    font-size: 75px;
-    font-family: 'Lilita One', cursive;
-}}
-
 /*  modal headings */
 
 .modal-heading {
@@ -98,14 +79,9 @@
     text-align: center;
 }}
 
-@media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
-.modal-where {
-    color: #4d9900;
-    font-size: 65px;
-    font-family: 'Lilita One', cursive;
-}}
+/*  Text on add creature form */
 
-.modal-text {
+.form-text {
     font-size: 14px;
     font-family: 'Source Sans Pro', sans-serif;
     padding-top: 0px;
@@ -113,10 +89,31 @@
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
-.modal-text {
+.form-text {
     font-size: 40px;
     font-family: 'Source Sans Pro', sans-serif
 }}
+
+/*  Text in modals on creatures page */
+
+.modal-text-creatures {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-top: 0px;
+    margin-right: 15px;
+    margin-top: 0px;
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
+.modal-text-creatures {
+    font-size: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-top: 0px;
+    margin-right: 15px;
+    margin-top: 0px;
+}}
+
+/*  Text in 'sure to delete' modal */
 
 .modal-heading-delete {
     color: #4d9900;
@@ -179,13 +176,83 @@ nav a {
     color: black;
 }
 
-/* Creatures images */
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    display: block;
+    font-size: 75px;
+    height: 56px;
+    line-height: 56px;
+}
+
+.side-nav li>a {
+    color: rgba(0,0,0,0.87);
+    display: block;
+    font-size: 30px;
+    font-weight: 500;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 32px;
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    display: block;
+    font-size: 120px;
+    font-weight: lighter;
+    height: 120px;
+    line-height: 120px;
+    background-color: white;
+    color: #4d9900;
+    border-radius: 50%;
+    box-shadow: 0 0 5px green;
+}}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 120px;
+    width: 120px;
+    line-height: 120px;
+}}
+
+nav {
+    color: white;
+    background-color: white;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    box-shadow: none;
+}
+
+.side-nav {
+    width: 600px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.side-nav li>a {
+    color: black;
+    display: block;
+    font-size: 50px;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 32px;
+    margin-top: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: lighter;
+}
+
+ @media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
+ .nav-wrapper {
+    padding-left: 40%;
+    padding-right: 40%;
+}}
+
+/* images syling throughout site */
 
 #wrapper,
 img {
     width: 100%;
     height: 100%;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 /* add a creature submission form */
@@ -203,7 +270,7 @@ img {
  }
 
 
-/* Creature List */
+/* Creatures page margins */
 
 .animals {
     margin-left: 150px;
@@ -291,23 +358,6 @@ img {
   }
  }
  
- 
- nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
-    display: block;
-    font-size: 75px;
-    height: 56px;
-    line-height: 56px;
-}
-
-.side-nav li>a {
-    color: rgba(0,0,0,0.87);
-    display: block;
-    font-size: 30px;
-    font-weight: 500;
-    height: 48px;
-    line-height: 48px;
-    padding: 0 32px;
-}
 
  /*-------------------------to prevent buttons stacking on stats page--------*/
 
@@ -315,7 +365,7 @@ img {
     padding: 0rem;
 }
 
-/*-------------------------button--------*/
+/*-------------------------button on add creature page--------*/
 
 .button-row {
     margin-top: 50px;
@@ -327,6 +377,7 @@ img {
 }
 }
 
+/*-------------------------styling of text on button on add creature page--------*/
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 500px) {
 .button-text {
@@ -335,66 +386,7 @@ img {
 }
 }
 
-@media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
-nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
-    display: block;
-    font-size: 120px;
-    font-weight: lighter;
-    height: 120px;
-    line-height: 120px;
-    background-color: white;
-    color: #4d9900;
-    border-radius: 50%;
-    box-shadow: 0 0 5px green;
-}}
-
-@media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
-nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: 120px;
-    width: 120px;
-    line-height: 120px;
-}}
-
-nav {
-    color: white;
-    background-color: white;
-    width: 100%;
-    height: 56px;
-    line-height: 56px;
-    box-shadow: none;
-}
-
-
-/*-------------------------navbar in mobile view--------*/
-
-.side-nav {
-    width: 600px;
-    background-color: white;
-    border-radius: 30px;
-}
-
-.side-nav li>a {
-    color: black;
-    display: block;
-    font-size: 50px;
-    height: 48px;
-    line-height: 48px;
-    padding: 0 32px;
-    margin-top: 50px;
-    font-family: 'Lilita One', cursive;
-    font-weight: lighter;
-}
-
-.row .col.s7 {
-    margin-left: 0px;
-}
-
-.delete-button{
-    color: white;
-    font-size: 50px;
-    font-family: 'Lilita One', cursive;
-    padding: 10px;
-}
+/*------------Text on Statistics page--------*/
 
 .stats-text {
     font-size: 20px;
@@ -407,6 +399,8 @@ nav {
     font-family: 'Source Sans Pro', sans-serif
 }}
 
+
+/*------------Buttons on Statistics page--------*/
 
 .btn_small {
     height: 35px;
@@ -424,6 +418,8 @@ nav {
     margin: 5px 5px;
     padding: 0 0.5em;
 }}
+
+/*------------Styling of text area on Add Creature Page--------*/
 
 .textarea.materialize-textarea {
     background-color: transparent;
@@ -443,6 +439,8 @@ nav {
     transition: all 0.3s;
 }
 
+/*------------Styling of button on Add Creature Page--------*/
+
 @media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
 .btn, .btn-large {
     text-decoration: none;
@@ -458,6 +456,7 @@ nav {
 }}
 
 
+/*------------Styling of modals throughout site--------*/
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
 .modal {
@@ -493,7 +492,7 @@ nav {
     border-radius: 25px;
 }
 
-/*-------------------------Location modals-------*/
+/*-------------------------Sub headings within modals on Location page-------*/
 
 .location-modal-heading {
     margin-left: 0px;
@@ -505,14 +504,6 @@ nav {
     margin-bottom: 0px;
 }
 
-.location-modal-text {
-    font-size: 14px;
-    font-family: 'Source Sans Pro', sans-serif;
-    padding-right: 10px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
-
 @media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
 .location-modal-heading {
     color: #4d9900;
@@ -522,6 +513,16 @@ nav {
     font-family: 'Lilita One', cursive;
 }}
 
+/*-------------------------Text within modals on Location page-------*/
+
+.location-modal-text {
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
 @media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
 .location-modal-text {
     font-size: 40px;
@@ -529,6 +530,7 @@ nav {
     font-family: 'Source Sans Pro', sans-serif
 }}
 
+/*-------------------------Stats data within modals on Location page-------*/
 
 .location-modal-stats {
     font-size: 20px;
@@ -542,6 +544,7 @@ nav {
     margin-bottom: 10px;
     font-family: 'Source Sans Pro', sans-serif
 }}
+
 
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
@@ -565,7 +568,7 @@ nav {
 }}
  
  
-/*-------------------------Location modal close-------*/ 
+/*-------------------------Modal close button in Locations and Creatures lages-------*/ 
  
  .modal-close {
      font-family: 'Lilita One', cursive;
@@ -592,23 +595,8 @@ nav {
      padding-right: 43%;
      margin-top: 0px;
  }}
- 
- 
- .modal-close-div-creatures {
-     padding-left: 46%;
-     padding-right: 46%;
-     margin-top: 0px;
- }
- 
 
- @media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
- .nav-wrapper {
-    padding-left: 40%;
-    padding-right: 40%;
-}}
-
-
-/*-------------------------Thumbs-------*/
+/*-------------------------Thumbs up and thumbs down in delete modal-------*/
 
 .modalDialog {
   position: fixed;
@@ -646,38 +634,18 @@ nav {
    height: 21%;
   }
  }
-
-.modal-heading-creatures {
-    color: #4d9900;
-    font-size: 50px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding-bottom: 70px;
-    font-family: 'Lilita One', cursive;
-}
+ 
+/*-------------------------Styling of submit button on Add Creatures page in mobile view-------*/
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
-.modal-heading-creatures {
-    margin-top: 30px;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    font-size: 75px;
-}
-}
-
-.modal-heading-where{
-    padding-top: 20px;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-family: 'Lilita One', cursive;
-    color: #4d9900;
-}
-
-@media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
-.modal-heading-where{
-    padding-top: 20px;
-    margin-bottom: 20px;
-    font-size: 60px;
-    font-family: 'Lilita One', cursive;
-    color: #4d9900;
+.btn, .btn-large, .btn-flat {
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 66px;
+    line-height: 36px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
 }}

@@ -7,38 +7,38 @@
                 <div class="input-field col s12">
                     <i class="material-icons prefix">place</i>
                     <select id="location" name="location">
-                  <option value="" disabled selected class="modal-text">Choose Location</option>
+                  <option value="" disabled selected class="form-text">Choose Location</option>
                   {% for loc in locations %}
-                      <option value="{{loc.location}}" class="modal-text">{{loc.location}}</option>
+                      <option value="{{loc.location}}" class="form-text">{{loc.location}}</option>
                   {% endfor %}
                 </select>
                 </div>
             </div>
-            <div class="input-field col s12 modal-text">
+            <div class="input-field col s12 form-text">
                 <i class="material-icons prefix">pets</i>
                 <input id="creature" name="creature_name" type="text">
-                <label for="icon_prefix"><text class="modal-text">Creature</text></label>
+                <label for="icon_prefix"><text class="form-text">Creature</text></label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">comment</i>
                 <textarea name="comment" id="comment" class="materialize-textarea"></textarea>
-                <label for="icon_telephone"><text class="modal-text">Comment</text></label>
+                <label for="icon_telephone"><text class="form-text">Comment</text></label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <i class="material-icons prefix" class="modal-text">date_range</i>
+                <i class="material-icons prefix" class="form-text">date_range</i>
                 <input id="date" name="date" type="text" class="datepicker">
-                <label for="icon_prefix"><text class="modal-text">Date of Sighting</text></label>
+                <label for="icon_prefix"><text class="form-text">Date of Sighting</text></label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <i class="material-icons prefix" class="modal-text">access_time</i>
+                <i class="material-icons prefix" class="form-text">access_time</i>
                 <input id="time" name="time" type="text" class="timepicker">
-                <label for="icon_prefix"><text class="modal-text">Time of Sighting</text></label>
+                <label for="icon_prefix"><text class="form-text">Time of Sighting</text></label>
             </div>
         </div>
         <div class="button-row">

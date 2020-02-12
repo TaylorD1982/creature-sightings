@@ -62,6 +62,7 @@ def update_creature(creature_id):
         'time':request.form.get('time')
     })
     return redirect(url_for('statistics'))
+  
 
 @app.route('/delete_creature/<creature_id>')
 def delete_creature(creature_id):
