@@ -11,16 +11,16 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
 
-  <link rel="icon" href="static/images/kestrel.jpg">
+  <link rel="icon" href="{{url_for('static', filename='images/kestrel.jpg')}}" >
 </head>
 
 <body>
   <header>
     <div class="mobileHide">
-      <img href="{{url_for('get_creatures')}}" class="brand-logo" src="static/images/banner-desktop.png" width="100%">
+      <img src="{{url_for('static', filename='images/banner-desktop.png')}}" class="brand-logo" width="100%">
     </div>
     <div class="mobileShow">
-      <img class="brand-logo" src="static/images/banner-mobile-1.png" height="100%">
+      <img src="{{url_for('static', filename='images/banner-mobile-1.png')}}" class="brand-logo" width="100%">
     </div>
     <nav class="nav">
       <div class="nav-wrapper">
@@ -35,7 +35,7 @@
         </ul>
         <center>
           <ul class="side-nav" id="mobile-demo">
-            <li><img src="static/images/nav-image.png" class="nav-logo"></li>
+            <li><img src="{{url_for('static', filename='images/nav-image.png')}}" class="nav-logo"></li>
             <li><a href="{{url_for('get_creatures')}}">Home</a></li>
             <li><a href="{{url_for('add_creature')}}">Add a Creature</a></li>
             <li><a href="{{url_for('creature')}}">Creatures</a></li>
@@ -94,8 +94,8 @@
           name: 'Glasgow',
           icon: iconBase + '4.png'
         },
-        paisley: {
-          name: 'Paisley',
+        strontian: {
+          name: 'Strontian',
           icon: iconBase + '5.png'
         },
         castle: {
@@ -113,28 +113,28 @@
       };
 
       var features = [{
-        position: new google.maps.LatLng(57.5833, -4.2500),
+        position: new google.maps.LatLng(57.558198, -4.182562),
         type: 'black'
       }, {
-        position: new google.maps.LatLng(56.1168, -3.1581),
+        position: new google.maps.LatLng(56.171335, -3.029398),
         type: 'kirkaldy'
       }, {
-        position: new google.maps.LatLng(55.9533, -3.1883),
+        position: new google.maps.LatLng(55.981572, -3.252362),
         type: 'edinburgh'
       }, {
         position: new google.maps.LatLng(55.8642, -4.2518),
         type: 'glasgow'
       }, {
-        position: new google.maps.LatLng(55.8473, -4.4401),
-        type: 'paisley'
+        position: new google.maps.LatLng(56.680285, -5.603666),
+        type: 'strontian'
       }, {
-        position: new google.maps.LatLng(54.9404, -3.9314),
+        position: new google.maps.LatLng(54.795061, -3.924787),
         type: 'castle'
       }, {
-        position: new google.maps.LatLng(57.4749, -3.2170),
+        position: new google.maps.LatLng(57.457405, -3.239592),
         type: 'aberlour'
       }, {
-        position: new google.maps.LatLng(56.5677, -3.5862),
+        position: new google.maps.LatLng(56.573855, -3.622469),
         type: 'burnham'
       }, ];
 
