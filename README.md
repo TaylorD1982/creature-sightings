@@ -212,6 +212,8 @@ sighting. Clicking on Comments a second time closes the drop down.</li>
 <li>Elsewhere, the modals on the ‘Creatures’ and ‘Locations’ pages have the text above the image on this size of display.</li>
 </ul>
 
+<img src="static/images/screens.png" width="100%">
+
 <h2>Bugs or problems encountered during testing</h2>
 
 <ul>
@@ -221,19 +223,29 @@ sighting. Clicking on Comments a second time closes the drop down.</li>
 
 <h2>Deployment</h2>
 
-This section should describe the process you went through to deploy the project to a hosting platform.
-
-The site has been deployed on Git Pages
+The site has been deployed on Heroku and the code can be viewed on Github.
 
 <h2>Credits</h2>
 
 <h3>Media</h3>
 
+
+<p>The images of the creatures are from the following sites:</p>
 <ul>
-<li>The images of the creatures are from</li>
-<li>The descriptions of each of the creatures was taken from Wikipedia</li>
-<li>Fonts from Font generator</li>
+<li>woodlandtrust.org.uk</li>
+<li>rspb.org.uk</li>
+<li>yorkpress.co.uk</li>
+<li>nationalgeographic.com</li>
+<li>bbc.co.uk</li>
+<li>wikipedia.org</li>
 </ul>
+
+
+<p>Creature descriptions are from wikipedia.org</p>
+
+
+<p>Fonts from font-generator.com</p>
+
 
 <h3>Acknowledgements</h3>
 
