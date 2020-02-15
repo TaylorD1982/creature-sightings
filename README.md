@@ -16,7 +16,6 @@ screen will be filed with white, drawing the user’s attention to the various e
 <p>The original design of the site is shown below. The final version is broadly the same although you will notice one or two changes.</p>
 
 <img src="static/images/wireframe.png" width="100%">
-<img src="static/images/hare1.jpg" width="100%" class="banner">
 
 <p>The app will be used by volunteers of The Scottish Environment Conservancy, nature enthusiasts who want to ensure a minimum of disruption 
 to local wildlife populations caused by building projects. The site’s primary function is allow users to log sightings of creatures to a database.</p>
