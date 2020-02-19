@@ -26,28 +26,32 @@ to local wildlife populations caused by building projects. The site’s primary 
 
 <P>Below are a number of scenarios, which demonstrate how a visitor to the site might navigate through the app.</P>
 
-<p><b>David</b> is visiting the site at the Black Isle and spots a Kestrel hovering above the beach. He navigates to the ‘Add a Creature’ page where he 
+
+<ol>
+<li><p><b>David</b> is visiting the site at the Black Isle and spots a Kestrel hovering above the beach. He navigates to the ‘Add a Creature’ page where he 
 completes all of the fields and submits the data to the database by clicking the ‘Record Sightings’ button. This action redirects David to the 
-‘Statistics & Sightings’ page, where he can see that the sighting is reflected in the chart and added to the sightings section below.</p>
+‘Statistics & Sightings’ page, where he can see that the sighting is reflected in the chart and added to the sightings section below.</p></li>
 
-<p><b>John</b> intends to travel to Burnham and wants to know the precise location of the entrance to the site. He navigates to the ‘Locations’ page 
-and finds the relevant map market for Burnham. By zooming in on the map he can see the exact spot he needs to travel to.</p>
+<li><p><b>John</b> intends to travel to Burnham and wants to know the precise location of the entrance to the site. He navigates to the ‘Locations’ page 
+and finds the relevant map market for Burnham. By zooming in on the map he can see the exact spot he needs to travel to.</p></li>
 
-<p><b>Bob</b> is at the Strontian site when he spots a large bird flying above some distant trees and hears the creature’s call. He wants to know what 
+<li><p><b>Bob</b> is at the Strontian site when he spots a large bird flying above some distant trees and hears the creature’s call. He wants to know what 
 he has seen and whether this is animal is of interest to the project. He navigates to the Creatures page and identifies a possible contender 
 from the image in the ‘Birds of Prey’ section. By clicking on the creature he brings up a modal featuring additional information and discovers 
-that the call he heard matches this animal. He navigates to the ‘Add a Creature’ page and records the sighting.</p>
+that the call he heard matches this animal. He navigates to the ‘Add a Creature’ page and records the sighting.</p></li>
 
-<p><b>Emily</b> records a sighting of a Barn Owl when at the Aberlour site. However she is then able to get a little closer and realises that this is 
+<li><p><b>Emily</b> records a sighting of a Barn Owl when at the Aberlour site. However she is then able to get a little closer and realises that this is 
 in fact a Tawny Owl. She therefore wishes to edit the record to correct her mistake. She navigates to the ‘Statistics and Sightings’ page and 
-inds her most recent sighting, which is the one she needs to amend. She clicks edit and is taken to the page that lets her revise the creature she saw.</p>
+inds her most recent sighting, which is the one she needs to amend. She clicks edit and is taken to the page that lets her revise the creature she saw.</p></li>
 
-<p><b>Lucy</b> is finished at the site in Kirkaldy where she recorded sightings of a number of bats. She wants to see how many of each she saw. By 
-navigating to the ‘Statistics and Sightings’ page, she can find this information displayed in the graph.</p>
+<li><p><b>Lucy</b> is finished at the site in Kirkaldy where she recorded sightings of a number of bats. She wants to see how many of each she saw. By 
+navigating to the ‘Statistics and Sightings’ page, she can find this information displayed in the graph.</p></li>
 
-<p><b>Morris</b> recorded a sighting of a Mountain hare at the Castle Douglas location. However, he later notices that the thing he thought was a hare 
+<li><p><b>Morris</b> recorded a sighting of a Mountain hare at the Castle Douglas location. However, he later notices that the thing he thought was a hare 
 hasn’t moved and, after getting closer, realises it was a clump of grass. He therefore needs to delete this record from the database. He 
-navigates to the ‘Statistics and Sightings’ page, find the records in question and hits delete. The sighting is then struck from the records.</p>
+navigates to the ‘Statistics and Sightings’ page, find the records in question and hits delete. The sighting is then struck from the records.</p></li>
+</ol>
+
 
 <h2>Features</h2>
 
@@ -85,37 +89,51 @@ the creature spotted and the time and the date of the sighting. A drop down allo
 <h3>Features Left to Implement</h3>
 
 <ul>
-
-<li>I would like the map markers to be interactive, so that by clicking on the marker, the modal for that location is displayed.</li>
-
-<li>I would like an ‘Are you sure you wish to delete?’ message to be displayed when hitting the delete button to remove a record. 
-I attempted to include this by having the ‘Del’ open a modal and then the ‘yes’ button within the modal delete the record, but 
-this caused the wrong record to be removed. I wasn’t able to fix this bug.</li>
+<li>Interactive map markers that cause the locations modal to pop up</li>
+<li>I would like an ‘Are you sure you wish to delete?’ message to be displayed when hitting the delete button to remove a record.</li>
 </ul>
 
 <h2>Technologies Used</h2>
 
 <ul>
 
-<li>JQuery - The project uses JQuery to simplify DOM manipulation. www.jquery.com</li>
+<li>JQuery - The project uses JQuery to simplify DOM manipulation.</li>
 
-<li>Google Fonts – The typeface used throughout the site. www.fonts.google.com</li>
+<li><a href="https://fonts.google.com/">Google Fonts</a> – For the typefaces used throughout the site.</li>
 
-<li>Materialize – A front-end framework used throughout the site. materializecss.com</li>
+<li><a href="https://materializecss.com">Materialize</a> – A front-end framework used throughout the site.</li>
 
-<li>Google Maps – Used for the ‘Locations’ page. www.developers.google.com/maps</li>
+<li><a href="https://developers.google.com/maps/documentation">Google Maps</a> – Used for the ‘Locations’ page.</li>
 
-<li>MS Paint – Used to create the original design of the site and adjust some of the images</li>
+<li>MS Paint – Used to create the original design of the site and adjust some of the images.</li>
 
-<li>MongoDB - The database used by the site. www.mongodb.com</li>
+<li><a href="https://www.mongodb.com">MongoDB</a> - The database used by the site and for the charts.</li>
 
-<li>Python – Programming language used throughout the site</li>
+<li>Python – Programming language used throughout the site.</li>
+
+<li>HTML – For the structure of the app.</li>
+
+<li>CSS - CSS was used for Styling.</li>
+
+<li>JavaScript - JavaScript for application controller.</li>
+
+<li>Google Chrome - Used for browser and development tools.</li>
+
+<li>Git - Git used for Version Control.</li>
+
+<li><a href="https://github.com">GitHub</a> - Repository hosted on GitHub.</li>
+
+<li><a href="https://dashboard.heroku.com">Heroku</a>  - App deployed to Heroku.</li>
+
+<li><a href="https://validator.w3.org">Validator</a> - Used as a HTML Validation Service</li>
 
 </ul>
 
 <h2>Testing</h2>
 
-<h3>Navigation Bar</h3>
+<h3><u>Scenarios</u></h3>
+
+<h3>Navigation Bar:</h3>
 
 <ol>
 <li>User clicks on the navigation bar item “Add a Creature” and is taken to that page, where they are invited to record a sighting.</li>
@@ -217,13 +235,40 @@ sighting. Clicking on Comments a second time closes the drop down.</li>
 <h2>Bugs or problems encountered during testing</h2>
 
 <ul>
-<li>Images did not display on the ‘Edit a Sighting’ page. This was fixed by….</li>
-<li>‘Are you Sure’ modal caused the wrong record to be deleted.</li>
+<li>Images did not display on the ‘Edit a Sighting’ page. This was fixed by using "url_for" to link to base.html and so onto images, rather than a static path</li>
+<li>The 'Del' button in the 'Statistics and Sightings page was to trigger a modal to pop up with an "Are you sure that you wish to delete?" message. However, this cause the wrong entry
+to be removed from the database. I was unable to resolve this issue.</li>
+</ul>
+
+<h2>Other Testing</h2>
+
+<ul>
+<li>HTML test to review the code for any errors.</li>
+<li>Google console to inspect the running of the app for any errors.</li>
 </ul>
 
 <h2>Deployment</h2>
 
-The site has been deployed on Heroku and the code can be viewed on Github.
+<p>The project is deployed on <b>Heroku</b>. The code and Readme file are hosted on <b>Github</b>.</p>
+
+<p>The process for deployment on Heroku was:</p>
+
+<ul>
+<li>Create a new unique app name in Heroku with “Europe” as the server.</li>
+<li>In the workspace, log into Heroku with command Line and the set of commands provided to create a connection between the application and Heroku.</li>
+<li>Create a new Git repository and add the files, then associate the Heroku application and push to Heroku once the requirements.txt file and Procfile have been created.</li>
+<li>In Heroku, specify the IP and port, so that the server instance will know how to run the application.</li>
+<li>IP address is 0.0.0.0</li>
+<li>Port is 5000</li>
+<li>Open the app to test successful deployment.</li>
+</ul>
+
+<p>The process for deployment on Github was:</p>
+
+<ul>
+<li>Create new project in Github.</li>
+<li>Associate the application with Github, add files and push across using commands provided within Github.</li>
+</ul>
 
 <h2>Credits</h2>
 
@@ -232,23 +277,21 @@ The site has been deployed on Heroku and the code can be viewed on Github.
 
 <p>The images of the creatures are from the following sites:</p>
 <ul>
-<li>woodlandtrust.org.uk</li>
-<li>rspb.org.uk</li>
-<li>yorkpress.co.uk</li>
-<li>nationalgeographic.com</li>
-<li>bbc.co.uk</li>
-<li>wikipedia.org</li>
+<li><a href="https://www.woodlandtrust.org.uk">www.woodlandtrust.org.uk</a></li>
+<li><a href="https://www.rspb.org.uk">www.rspb.org.uk</a></li>
+<li><a href="https://www.yorkpress.co.uk">yorkpress.co.uk</a></li>
+<li><a href="https://www.nationalgeographic.com">nationalgeographic.com</a></li>
+<li><a href="https://www.bbc.co.uk">bbc.co.uk</a></li>
+<li><a href="https://www.wikipedia.org">wikipedia.org</a></li>
 </ul>
 
 
-<p>Creature descriptions are from wikipedia.org</p>
-
-
-<p>Fonts from font-generator.com</p>
+<p>Creature descriptions are from <a href="https://www.wikipedia.org">wikipedia.org</a></p>
 
 
 <h3>Acknowledgements</h3>
 
 <ul>
-<li>I received inspiration for this project from X</li>
+<li>Code Institute</li>
+<li>Seun Owonikoko</li>
 </ul>

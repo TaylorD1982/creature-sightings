@@ -16,12 +16,18 @@
 
 <body>
   <header>
+    
+    <!-- banner at top of each page -->
+    
     <div class="mobileHide">
-      <img src="{{url_for('static', filename='images/banner-desktop.png')}}" class="brand-logo" width="100%">
+      <img src="{{url_for('static', filename='images/banner-desktop.png')}}" class="brand-logo" width="100%" alt="The Scottish Environment Conservancy">
     </div>
     <div class="mobileShow">
-      <img src="{{url_for('static', filename='images/banner-mobile-1.png')}}" class="brand-logo" width="100%">
+      <img src="{{url_for('static', filename='images/banner-mobile-1.png')}}" class="brand-logo" width="100%" alt="The Scottish Environment Conservancy">
     </div>
+    
+    <!-- Nav Bar - mobile and desktop view -->
+    
     <nav class="nav">
       <div class="nav-wrapper">
         <a href="{{url_for('get_creatures')}}" class="brand-logo">Logo</a>
@@ -35,7 +41,7 @@
         </ul>
         <center>
           <ul class="side-nav" id="mobile-demo">
-            <li><img src="{{url_for('static', filename='images/nav-image.png')}}" class="nav-logo"></li>
+            <li><img src="{{url_for('static', filename='images/nav-image.png')}}" class="nav-logo" alt="Flower"></li>
             <li><a href="{{url_for('get_creatures')}}">Home</a></li>
             <li><a href="{{url_for('add_creature')}}">Add a Creature</a></li>
             <li><a href="{{url_for('creature')}}">Creatures</a></li>
@@ -50,7 +56,12 @@
   {% block content %} {% endblock %}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.8.1/jquery.timepicker.min.css"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.8.1/jquery.timepicker.min.js"></script>
   <script type="text/javascript">
+  
+  /* Materialize JQuery */
+  
     $(document).ready(function() {
       $('.collapsible').collapsible();
       $('select').material_select();
@@ -58,6 +69,7 @@
       $('.modal').modal();
       $('.timepicker').timepicker();
     });
+    
     $('.datepicker').pickadate({
       selectMonths: true, // Creates a dropdown to control month
       selectYears: 15, // Creates a dropdown of 15 years to control year,
@@ -66,6 +78,8 @@
       close: 'Ok',
       closeOnSelect: false // Close upon selecting a date,
     });
+    
+    /* Google map code */
 
     var map;
 
@@ -75,6 +89,8 @@
         center: new google.maps.LatLng(56.4, -4.2),
         mapTypeId: 'roadmap'
       });
+
+      /* Site Icons */
 
       var iconBase = 'http://maps.google.com/mapfiles/kml/paddle/';
       var icons = {
