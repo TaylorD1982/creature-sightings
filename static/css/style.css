@@ -42,7 +42,7 @@
 }
 }
 
-/* Headings of creature types */
+/* creature page headings */
 
 .page-heading-creatures {
     color: #4d9900;
@@ -115,26 +115,7 @@
     margin-top: 0px;
 }}
 
-/*  Text in 'sure to delete' modal */
-
-.modal-heading-delete {
-    color: #4d9900;
-    font-size: 45px;
-    font-family: 'Lilita One', cursive;
-    padding-bottom: 55px;
-    padding-top: 25px;
-}
-
-@media only screen and (min-device-width: 0px) and (max-device-width: 1000px) {
-.modal-heading-delete {
-    color: #4d9900;
-    font-size: 50px;
-    font-family: 'Lilita One', cursive;
-    padding-bottom: 55px;
-    padding-top: 25px;
-}}
-
-/*  Edit & Delete buttons on Statistics Page */
+/*  Info, Edit & Delete buttons on Statistics Page */
 
 .btn_small {
     height: 24px;
@@ -330,12 +311,6 @@ img {
 .graphs {
     margin-left: 50px;
     margin-right: 50px;
-}
-
-/* modal delete buttons */
-
-.btn-large {
-    margin: 20px;
 }
 
  /*-------------------------Image re-sizing for different screen sizes--------*/
@@ -598,45 +573,6 @@ img {
      padding-right: 43%;
      margin-top: 0px;
  }}
-
-/*-------------------------Thumbs up and thumbs down in delete modal-------*/
-
-.modalDialog {
-  position: fixed;
-  font-family: 'Nanum Myeongjo', serif;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 99999;
-  opacity: 0;
-  -webkit-transition: opacity 300ms ease-in;
-  -moz-transition: opacity 300ms ease-in;
-  transition: opacity 300ms ease-in;
-  pointer-events: none;
- }
-
- .modalDialog:target {
-  opacity: 1;
-  pointer-events: auto;
- }
-
- .modalDialog>div {
-  width: 30%;
-  height: 40%;
-  position: relative;
-  margin: 10% auto;
-  border-radius: 10px;
-  background: white;
- }
-
- @media only screen and (min-device-width: 0px) and (max-device-width: 600px) {
-  .modalDialog>div {
-   width: 70%;
-   height: 21%;
-  }
- }
  
 /*-------------------------Styling of submit button on Add Creatures page in mobile view-------*/
 

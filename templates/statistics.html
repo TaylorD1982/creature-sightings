@@ -1,12 +1,16 @@
 {% extends 'base.html' %} {% block content %}
 
-<h3 class="page-heading">Statistics</h3>
+<h1 class="page-heading">Statistics</h1>
+
+<!-- Graph from MongoDB charts -->
 
 <div class="row graphs">
     <div class="col s12 m12 l12"><iframe style="border: none" width="100%" height="480" src="https://charts.mongodb.com/charts-project-0-gippj/embed/charts?id=cea30655-b538-4246-b43d-0cdd28060c60&tenant=b8edf37c-6dc3-4793-a0fc-910779e7c3e6&theme=light"></iframe></div>
 </div>
 
-<h3 class="page-heading">Sightings</h3>
+<h1 class="page-heading">Sightings</h1>
+
+<!-- Collapsibles for each database entry -->
 
 <div class="row form-stats">
     <ul class="collapsible" data-collapsible="accordion">
@@ -28,25 +32,6 @@
                     <p class="stats-text">{{creature.comment}}</p>
                 </span>
             </div>
-                
-            
-            <div id="openModalwill" class="modalDialog">
-                <div class="modal-content">
-                    <center class="modal-heading-delete">Delete This Entry?</center>
-                    <div>
-                        <div class="col s6" style="height: 100px">
-                            <a href="#!" class="modal-close">
-                                <center><img src="static/images/thumbs-down.png" style="width: 100px; max-height: 100px"></center>
-                            </a>
-                        </div>
-                <div class="col s6" style="height: 100px">
-                            <a href="{{url_for('delete_creature', creature_id=creature._id)}}">
-                                <center><img src="static/images/thumbs-up.png" style="width: 100px; max-height: 100px"></center>
-                            </a>
-                    </div>
-                </div>
-            </div>  
-                
                 
         </li>
         {% endfor %}

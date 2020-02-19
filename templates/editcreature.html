@@ -1,9 +1,12 @@
 {% extends 'base.html' %} {% block content %}
+<h1 class="page-heading">Edit Sighting</h1>
 
-<h3 class="page-heading">Edit Sighting</h3>
+<!-- Form for entering creature details -->
+
 <div class="row form">
     <form action="{{ url_for('update_creature', creature_id=creature._id) }}" method="POST" class="col s12">
         <div class="row">
+            <!-- Location -->
             <div class="input-field col s12">
                 <i class="material-icons prefix">place</i>
                 <select id="location" name="location">
@@ -20,6 +23,7 @@
             </div>
         </div>
         <div class="row">
+        <!-- Creature type -->
             <div class="input-field col s12">
                 <i class="material-icons prefix">pets</i>
                 <input id="creature" name="creature_name" type="text" class="validate" value="{{creature.creature_name}}" required="" aria-required="true">
@@ -27,26 +31,30 @@
             </div>
         </div>
         <div class="row">
+        <!-- Comment -->
             <div class="input-field col s12">
                 <i class="material-icons prefix">comment</i>
                 <textarea name="comment" id="comment" class="materialize-textarea">{{creature.comment}}</textarea>
-                <label for="icon_telephone">Comment</label>
+                <label for="icon_telephone">Comment (if applicable)</label>
             </div>
         </div>
         <div class="row">
+        <!-- Date -->
             <div class="input-field col s12">
                 <i class="material-icons prefix">date_range</i>
-                <input id="date" name="date" type="text" class="datepicker" required="" aria-required="true">
-                <label for="icon_prefix">Due of Sighting</label>
+                <input id="date" name="date" type="text" required="" aria-required="true">
+                <label for="icon_prefix">Date of Sighting (in format DD/MM/YYYY)</label>
             </div>
         </div>
         <div class="row">
+        <!-- Time -->
             <div class="input-field col s12">
                 <i class="material-icons prefix">access_time</i>
-                <input id="time" name="time" type="text" class="timepicker" required="" aria-required="true">
-                <label for="icon_prefix">Time of Sighting</label>
+                <input id="time" name="time" type="text" required="" aria-required="true">
+                <label for="icon_prefix">Time of Sighting (in format 22:33)</label>
             </div>
         </div>
+        <!-- Submit Button -->
         <div class="button-row">
             <button class="btn waves-effect waves-light" style="background-color: #4d9900" type="submit" name="action">
                     <text class="button-text">Update Record</text>

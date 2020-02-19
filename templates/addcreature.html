@@ -1,9 +1,13 @@
 {% extends 'base.html' %} {% block content %}
-<h3 class="page-heading">Record a Sighting</h3>
+<h1 class="page-heading">Record a Sighting</h1>
+
+<!-- Form for entering creature details -->
+
 <div class="row form">
-    <form action="{{ url_for('insert_creature') }}" method="POST"  class="col s12">
+    <form action="{{ url_for('insert_creature') }}" method="POST" class="col s12">
         <div class="row">
             <div class="row">
+                <!-- Location -->
                 <div class="input-field col s12">
                     <i class="material-icons prefix">place</i>
                     <select id="location" name="location">
@@ -14,33 +18,38 @@
                 </select>
                 </div>
             </div>
+            <!-- Creature type -->
             <div class="input-field col s12 form-text">
                 <i class="material-icons prefix">pets</i>
                 <input id="creature" name="creature_name" type="text" required="" aria-required="true">
                 <label for="icon_prefix"><text class="form-text">Creature</text></label>
             </div>
         </div>
+        <!-- Comment -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">comment</i>
                 <textarea name="comment" id="comment" class="materialize-textarea"></textarea>
-                <label for="icon_telephone"><text class="form-text">Comment</text></label>
+                <label for="icon_telephone"><text class="form-text">Comment (if applicable)</text></label>
             </div>
         </div>
+        <!-- Date -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix" class="form-text">date_range</i>
-                <input id="date" name="date" type="text" class="datepicker" required="" aria-required="true">
-                <label for="icon_prefix"><text class="form-text">Date of Sighting</text></label>
+                <input id="date" name="date" type="text" required="" aria-required="true">
+                <label for="icon_prefix"><text class="form-text">Date of Sighting (in format DD/MM/YYYY)</text></label>
             </div>
         </div>
+        <!-- Time -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix" class="form-text">access_time</i>
-                <input id="time" name="time" type="text" class="timepicker" input type="text" class="txt" required="" aria-required="true">
-                <label for="icon_prefix"><text class="form-text">Time of Sighting</text></label>
+                <input id="time" name="time" type="text" input type="text" class="txt" required="" aria-required="true">
+                <label for="icon_prefix"><text class="form-text">Time of Sighting (in format 22:33)</text></label>
             </div>
         </div>
+        <!-- Submit Button -->
         <div class="button-row">
             <button class="btn waves-effect waves-light" style="background-color: #4d9900" type="submit" name="action">
                     <text class="button-text">Record Sighting</text>
