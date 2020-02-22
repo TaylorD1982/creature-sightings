@@ -5,11 +5,13 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+  
+  <!-- Google fonts -->
+  
   <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
+  <!-- Browser image -->
 
   <link rel="icon" href="{{url_for('static', filename='images/kestrel.jpg')}}" >
 </head>
@@ -30,7 +32,6 @@
     
     <nav class="nav">
       <div class="nav-wrapper">
-        <a href="{{url_for('get_creatures')}}" class="brand-logo">Logo</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="{{url_for('get_creatures')}}">Home</a></li>
@@ -56,8 +57,6 @@
   {% block content %} {% endblock %}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.8.1/jquery.timepicker.min.css"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.8.1/jquery.timepicker.min.js"></script>
   <script type="text/javascript">
   
   /* Materialize JQuery */

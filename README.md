@@ -90,6 +90,8 @@ the creature spotted and the time and the date of the sighting. A drop down allo
 
 <ul>
 <li>Interactive map markers that cause the locations modal to pop up</li>
+<li>Time picker function added to edit sighting and add sighting forms. The Materialize Timepicker would not function correctly on all screen sizes so was disabled</li>
+<li>Date picker function added to edit sighting and add sighting forms. The Materialize Datepicker would not function correctly on all screen sizes so was disabled</li>
 <li>I would like an ‘Are you sure you wish to delete?’ message to be displayed when hitting the delete button to remove a record.</li>
 </ul>
 
@@ -149,7 +151,8 @@ the creature spotted and the time and the date of the sighting. A drop down allo
 <li>User clicks on the ‘Choose Location field which triggers a drop down menu of the 8 sites. The user selects the appropriate location.</li>
 <li>User clicks on the ‘Creature’ field and types in the species that they wish to record.</li>
 <li>User clicks on the ‘Comment’ field and types in a comment, if they have one.</li>
-<li>User clicks on the ‘Date of Sighting’ field and a ‘Date picker’ calendar pops up. The user selects the appropriate date.</li>
+<li>User clicks on the ‘Date of Sighting’ field. The user enters the appropriate date.</li>
+<li>User clicks the ‘Record Sighting’ button and a pop up appears in the 'Time of Sighting' confirming this information is required
 <li>User clicks on the ‘Time of Sighting’ field and enters the time they saw the creature.</li>
 <li>User clicks the ‘Record Sighting’ button and the sighting is recorded. The user is then redirected to the ‘Statistics and Sightings’ 
 page, where they can see that their sighting has been added to the chart and sightings list.</li>

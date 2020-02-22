@@ -12,11 +12,7 @@
                 <select id="location" name="location">
                   <option value="" disabled selected>Choose location</option>
                   {% for loc in locations %}
-                      {% if loc.location_name == creature.location_name%}
-                      <option value="{{loc.location}}" selected >{{loc.location}}</option>
-                      {% else %}
-                       <option value="{{loc.location}}">{{loc.location}}</option>
-                    {% endif %}
+                      <option value="{{loc.location}}" class="form-text">{{loc.location}}</option>
                   {% endfor %}
                 </select>
                 <label>creature location</label>
